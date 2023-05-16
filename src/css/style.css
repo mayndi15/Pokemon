@@ -2,12 +2,12 @@ body{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     max-width: 1280px;
     margin: 0 auto;
-    background-color: #5e5b5bad;
+    background-color: #ffffffec;
     color: #333333;
 }
 
 body.dark-theme{
-    background-color: #212121;
+    background-color: #212121f5;
     color: #f5f5f5;
 }
 
@@ -18,7 +18,7 @@ header{
 }
 
 header .logo,
-header .light-theme{
+header .img-alter-theme{
     width: 30px;
     transition: 0.2s ease-in-out;
 }
@@ -29,7 +29,7 @@ header #bt-alter-theme{
 }
 
 header .logo:hover,
-header .light-theme:hover,
+header .img-alter-theme:hover,
 main .pokemon-card:hover{
     transform: scale(1.05);
     cursor: pointer;
@@ -46,12 +46,8 @@ main .pokemon-list{
     justify-content: center;
 }
 
-.dark-theme .pokemon-card{
-    background-color: #a8a8a8;
-}
-
 main .pokemon-card{
-    background-color: #d8e3ec;
+    background-color: #ffffff;
     width: 200px;
     padding: 15px;
     display: flex;
@@ -59,11 +55,16 @@ main .pokemon-card{
     align-items: center;
     gap: 15px;
     border-radius: 15px;
+    border: 1px solid #333333;
     transition: 0.2s ease-in-out;
 }
 
+.dark-theme .pokemon-card{
+    background-color: #000000;
+}
+
 main .pokemon-card:hover{
-    background-color: #96d9d6;
+    background-color: #ffffff;
 }
 
 main .pokemon-card .pokemon-title{
